@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #FF7F00;
+  --color-brand-yellow: #FFB700;
+  --color-brand-dark: #111111;
+  --color-brand-gray: #F9FAFB;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-brand-dark);
+    background-color: var(--color-brand-gray);
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
